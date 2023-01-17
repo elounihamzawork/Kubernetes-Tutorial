@@ -14,3 +14,5 @@ To make a service external we should do 2 things :
 
 1. In the spec section we add a type => ``type: LoadBalancer``
 2. In the ports we add node port : `nodePort: 30000` and must be between *30000 - 32767*
+
+The default type of service is **InternalService** or **ClusterIP**
