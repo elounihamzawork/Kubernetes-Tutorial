@@ -17,3 +17,7 @@ data:
 
 To install Ingress controller in Minikube we run this command :  
 `minikube addons enable ingress` => Automatically starts the k8s Nginx implementation of Ingress Controller
+
+### Configure Tls
+![alt text](configure_tls.PNG)
+![alt text](tls2.PNG)
