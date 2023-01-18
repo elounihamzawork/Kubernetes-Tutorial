@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: dashboard-ingress
+spec:
+  rules:
+    - host: analytics.dashboard.com
+      http:
+        paths:
+          backend:
+            serviceName: analytics-service
+            servicePort: 3000
+    - host: shopping.dashboard.com
+      http:
+        paths:
+          backend:
+            serviceName: shopping-service
+            servicePort: 3000
+
